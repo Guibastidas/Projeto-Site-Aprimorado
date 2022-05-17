@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #4ab5ca;
+    --cor2: #16dac6;
+    --cor3: #23c587;
+    --cor4: #0cf259;
+    --cor5: #15eb20;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body{
+    background-color: white;
+    background: linear-gradient(to left, var(--cor2) 30%, var(--cor4) 80%);
+    background-size: cover;
+    overflow: hidden;
+}
+
+body h1 {
+    text-align: center;
+    color: #323232;
+    padding-top: 30px;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.cabecalho-image img {
+    position: relative;
+    height: 200px;
+    top: 50%;
+    left: 43%;
+
+}
+
+a{
+    text-decoration: none;
+    color: #323232;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid var(--cor4);
+    padding: 7.5px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+button:hover {
+    background-color: var(--cor4);
+    color: rgb(0, 0, 0);
+}
