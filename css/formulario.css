@@ -21,44 +21,79 @@ body{
     background-color: white;
     background: linear-gradient(to left, var(--cor2) 30%, var(--cor4) 80%);
     background-size: cover;
-    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #323232;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid var(--cor4);
+    padding: 6px;
+    max-width: 200px;
+    margin: 10px 0 0 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+button:hover {
+    background-color: var(--cor2);
+    color: rgb(0, 0, 0);
 }
 
 .box{
-    color: white;
+    color: #323232;
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: 10px;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;/*Borda da box */
+    background: white;
+    padding: 15px;
     border-radius: 15px;
-    width: 25%; /*largura da box*/
+    max-width: 700px;
+
 }
+
 fieldset{
-    border: 3px solid dodgerblue;
+    border: 3px solid #0cf259;
+    padding: 5px;
 }
+
 legend{
-    border: 1px solid dodgerblue;
-    padding: 10px;
+    border: 1px solid #0cf259;
+    padding: 6px;
     text-align: center; /*alinhar centro*/
-    background-color: dodgerblue;
+    background-color: #0cf259;
     border-radius: 8px;
     
 }
+
 .inputBox{
     position: relative;
+    padding: -10px;
 }
+
 .inputUser{
     background: none;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid  #323232;
     outline: none;
-    color: white;
-    font-size: 15px;
+    color: #323232;
+    font-size: 11px;
     width: 100%;
     letter-spacing: 2px; /*aumenta espaçamento caracter*/
 }
+
 .labelInput{
     position: absolute;
     top: 0px;
@@ -70,7 +105,7 @@ legend{
 .inputUser:valid ~ .labelInput{ /*joga os input pra cima*/
     top: -20px;
     font-size: 12px;
-    color: dodgerblue;
+    color: #0cf246;
 }
 #data_nascimento{
     border: none;
@@ -79,16 +114,19 @@ legend{
     outline: none;
     font-size: 15px; /*aumenta a fonte*/
 }
+
 #submit{
-    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    background-color: #0cf259; 
     width: 100%;
     border: none;
-    padding: 15px;
+    padding: 10px;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
+    margin-top: 20px;
     cursor: pointer;
     border-radius: 10px;
 }
+
 #submit:hover{
-    background-image: linear-gradient(to right, rgb(0, 92, 172), rgb(80, 19, 195));
+    background-color: var(--cor5);
 }
